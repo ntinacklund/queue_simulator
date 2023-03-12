@@ -1,16 +1,24 @@
-# Projektmall
+# Kösimulering i Skruttemålas postkontor
 
 ## Uppgiften
 
 ### Lydelse
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac tincidunt justo. Vivamus eget malesuada felis. Etiam euismod mollis lobortis. Etiam at pellentesque diam. Donec suscipit nulla arcu, consequat iaculis neque maximus non. Proin laoreet tortor nulla, in pharetra lorem laoreet id. Vestibulum condimentum, neque vel suscipit tempor, felis erat consectetur est, a bibendum metus enim et odio. Vivamus laoreet eu eros id efficitur. Nunc ac urna gravida, dignissim libero vel, pellentesque dui. Maecenas arcu enim, venenatis eu purus id, condimentum posuere lorem. Nunc pharetra, elit at convallis ultricies, nunc risus fermentum nisl, sit amet molestie nisl urna eu arcu. Nunc molestie elit ullamcorper nisl pharetra dignissim. Praesent pretium blandit ornare.
+På det lilla postkontoret i Skruttemåla behöver kösituationer simuleras. De öppnar varje dag kl 9 och stänger kl 18. Kunder anlädning i genomsnitt var femte minuter, dvs sannolikheten för att en ny kund ska komma under en viss minut är 20%. För postexpiditen, Fru Franco, tar det exakt två minuter att betjäna ett postärende. Hälften av alla kunder har ett enda ärende, en fjärdedel har två ärenden, en åttondel tre ärenden osv.
 
-### Exempel
+Vi stängningsdags låser Fru Franco dörren men betjänar plikttroget de kunder som står i kön redan. DÄrefter för hon dagens kundstatistik (totala antalet kunder, alla kunders sammanlagda väntetid och genomsnittliga väntetid per kund). Allt detta ska simuleras av ditt program enligt följande exempel:
 
-Duis lobortis porta orci, et scelerisque diam ornare nec. Pellentesque eget suscipit ligula, et ultrices tortor. Ut congue, tellus in rutrum interdum, massa est convallis eros, at blandit quam augue vitae libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed nisi libero, pretium vel tincidunt mollis, accumsan at eros. Nunc eu congue ex, quis sodales enim. Aliquam a sem hendrerit, vehicula enim ut, maximus risus. Aenean ac lobortis justo. Aenean molestie vehicula dolor, at ullamcorper nisi eleifend a. Quisque egestas est vulputate, sagittis leo id, fermentum ante. Pellentesque cursus nulla nibh, id luctus diam laoreet in.
+![image](https://user-images.githubusercontent.com/101513815/224565365-1359e5ba-e8ce-4d86-ac2e-d5b6125ef4d9.png)
+
+Alla kunder förutsätts anlända vid hela minuttider, ingen får komma indrällande några sekunder för tidigt eller för sent.
+
+- Vid ankomsten slumpas kundens antal ärenden fram enligt sannolikheten som gavs ovan. Tricket ligger i att köra en loop som bryts med 50% sannolikhet. Varje nytt ärende betyder ökad betjäningstid. Utträdestiden beräknas dock inte förrän kunden ska betjänas.
+- Är kön tom när en ny kund anländer, betjänas denna direkt (utträdestiden beräknas).
+- Är kön inte tom, ställs kunden i kön.
 
 ### Krav för olika betyg
+
+Uppgiften i sin grundform är nog för att uppnå bedömningen A gällande uppgiftens svårighet. Om du vill utmana dig själv kan du införa möjligheten att förändra problemets parametrar, exempelvis öppettider, ankomstsannolikhet m.m., genom inmatning. Inför även felkontroll så att användaren inte försöker mata in något som inte är tal.
 
 ## Dokumentation & Planering
 
@@ -31,3 +39,7 @@ I första stadiet av projektet bör du även skissa upp ett flödesschema i för
 ## Författare
 
 Niclas Lund
+
+## Disclaimer
+
+Uppgiften (eller inspiration till den) är ärligt stulen från EECS-skolan (gamla CSC) och kursen DD1314.
