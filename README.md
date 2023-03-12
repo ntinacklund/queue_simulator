@@ -1,5 +1,7 @@
 # Kösimulering i Skruttemålas postkontor
 
+Nyckelord: Simulering, kontrollstruktur, slumpgenerator
+
 ## Uppgiften
 
 ### Lydelse
