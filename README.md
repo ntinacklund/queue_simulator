@@ -8,7 +8,7 @@ Nyckelord: Simulering, kontrollstruktur, slumpgenerator
 
 På det lilla postkontoret i Skruttemåla behöver kösituationer simuleras. De öppnar varje dag kl 9 och stänger kl 18. Kunder anlädning i genomsnitt var femte minuter, dvs sannolikheten för att en ny kund ska komma under en viss minut är 20%. För postexpiditen, Fru Franco, tar det exakt två minuter att betjäna ett postärende. Hälften av alla kunder har ett enda ärende, en fjärdedel har två ärenden, en åttondel tre ärenden osv.
 
-Vi stängningsdags låser Fru Franco dörren men betjänar plikttroget de kunder som står i kön redan. DÄrefter för hon dagens kundstatistik (totala antalet kunder, alla kunders sammanlagda väntetid och genomsnittliga väntetid per kund). Allt detta ska simuleras av ditt program enligt följande exempel:
+Vi stängningsdags låser Fru Franco dörren men betjänar plikttroget de kunder som står i kön redan. Därefter för hon dagens kundstatistik (totala antalet kunder, alla kunders sammanlagda väntetid och genomsnittliga väntetid per kund). Allt detta ska simuleras av ditt program enligt följande exempel:
 
 ![image](https://user-images.githubusercontent.com/101513815/224565365-1359e5ba-e8ce-4d86-ac2e-d5b6125ef4d9.png)
 
